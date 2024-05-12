@@ -1,8 +1,10 @@
 .tw-follow-card {
+    width: 350px;
+    font-size: 1.2rem;
+    color: #fff;
     display: flex;
     align-items: center;
-    color: #fff;
-    font-size: 1.2rem;
+    justify-content: space-between;
   }
   
   .tw-follow-card header {
@@ -23,12 +25,12 @@
   .tw-follow-card img {
     width: 55px;
     height: 55px;
+    margin-right: 10px;
     border-radius: 360px;
     -webkit-border-radius: 360px;
     -moz-border-radius: 360px;
     -ms-border-radius: 360px;
     -o-border-radius: 360px;
-    margin-right: 10px;
   }
   
   .tw-follow-card button {
@@ -44,3 +46,10 @@
     font-weight: 800;
     cursor: pointer;
   }
+
+.small {
+  font-size: 0.5rem;
+  margin: 0px;
+  margin-top: 3px;
+  opacity: 0.7;
+}
