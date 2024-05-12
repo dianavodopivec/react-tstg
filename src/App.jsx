@@ -1,11 +1,12 @@
 //En App se van renderizando los elementos.
 import TwitterFollowCard from "./components/TwitterFollowCard";
+const addAt = (name) => `@${name}`
 
 const App = () => (
     <section className="App">
-    <TwitterFollowCard userName="dianavodopivec" name="Diana Vodopivec"/>
-    <TwitterFollowCard userName="matiasecharri" name="Matias Echarri"/>
-    <TwitterFollowCard userName="pachupacha" name="Gabriel García"/> 
+    <TwitterFollowCard format={addAt} isFollowing={false} userName="dianavodopivec" name="Diana Vodopivec"/>
+    <TwitterFollowCard format={addAt} isFollowing userName="matiasecharri" name="Matias Echarri"/>
+    <TwitterFollowCard format={addAt} isFollowing userName="pachupacha" name="Gabriel García"/> 
     </section>
 );
 
