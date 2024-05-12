@@ -1,9 +1,10 @@
 import "/src/components/TwitterFollowCard.css"
 
-const TwitterFollowCard = ({format, userName, name, isFollowing}) => {
+const TwitterFollowCard = ({children, format, userName = "Unknow", name, isFollowing}) => {
   const imgSrc = `https://unavatar.io/${userName}`
   const altTag = `The avatar of ${name}`
-  console.log(isFollowing)
+  const text = isFollowing ? "Unfollow" : "Follow"
+  //console.log(isFollowing)
   
   return (
     <article className="tw-follow-card">
@@ -11,15 +12,18 @@ const TwitterFollowCard = ({format, userName, name, isFollowing}) => {
           <img
             src={imgSrc}
             alt={altTag} 
-          /> 
+            /> 
           <div>
+            {children}
             <strong>{name}</strong>
             <span>{format(userName)}</span>
           </div>
         </header>
     
         <aside>
-          <button>Seguir</button>
+          <button>
+            {text}
+          </button>
         </aside>
       </article>
     )
