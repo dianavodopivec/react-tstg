@@ -36,7 +36,7 @@
   .tw-follow-card button {
     font-size: 1rem;
     margin-left: 15px;
-    border: none;
+    border: 1px solid #ffffff52;
     border-radius: 360px;
     -webkit-border-radius: 360px;
     -moz-border-radius: 360px;
@@ -55,7 +55,7 @@
 }
 
 .button--follow {
-  background-color: #d8e4e4;
+  background-color: #eef4f4;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -64,11 +64,12 @@
 }
 
 .button--follow:hover {
-  background-color: #71d3d3;
+  background-color: #fff;
 }
 
 .button--unfollow {
-  background-color: #eec0c0;
+  background-color: #191919;
+  color: white;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -77,5 +78,6 @@
 }
 
 .button--unfollow:hover {
-  background-color: #e75959;
+  background-color: #fff;
+  color: black;
 }
